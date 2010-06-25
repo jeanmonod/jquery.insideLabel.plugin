@@ -1,0 +1,23 @@
+span.inside-label-container {
+  border: 10px solid red;
+}
+
+.with-label-inside {
+  background-color: yellow;  
+}
+
+label.inside {
+  color: grey;
+}
+
+label.inside.value-set {
+  display: none;
+}
+
+label.inside.focus {
+  display: block;
+  background: green;
+  color:white;
+  z-index:10;
+}
+
