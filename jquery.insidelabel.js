@@ -70,8 +70,7 @@
       }
       
       // Add comportemental behaviors to the field
-      $field
-      .focus(function() {
+      $field.focus(function() {
         $thislabel.addClass('focus');
         $thislabel.css('top',$field.outerHeight());
       })
