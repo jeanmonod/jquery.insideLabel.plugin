@@ -10,18 +10,18 @@
  *
  *
  *   
- * This plugin allow to display the label of an input or an textarea inside the field.
+ * This plugin allows to display the input's labels or textarea inside the fields.
  * To use it, activate it on the label:
- *   $('#labelId').inFieldLabel()
+ *   $('#labelId').insideLabel()
  *     
- * Then the label and the input are going to be encaplusated inside a relatif span in order
+ * Then the label and the input will be encaplusated inside a relative span in order
  * to use abosolute positioning inside:
- *   <span class="infieldlabel" style="position: relative">
+ *   <span class="inside-label-container" style="position: relative">
  *     <label ... >
  *     <input ... >   
  *   </span>
  *    
- * For styling, here are the different class avaliable:
+ * For styling, here are the differents classes avaliable:
  *   span.inside-label-container : The encaplusated span
  *   input.with-label-inside     : Field that have the label inside
  *   label.inside                : Label that are inside a field  
