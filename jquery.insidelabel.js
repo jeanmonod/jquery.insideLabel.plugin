@@ -51,7 +51,7 @@
       // Again, nothing to attach
       if( $field.length == 0) return; 
       
-      // $field found, now place it inside a relative span and add it a styling class
+      // $field found, now put it inside a relative span and add it a styling class
       $field.wrap('<span class="inside-label-container" style="position: relative; display:inline-block; width: 100%"></span>');
       $newSpan = $field.closest('span');
       $field.addClass('with-label-inside');
@@ -61,7 +61,7 @@
       $thislabel.css('position', 'absolute');
       $thislabel.addClass('inside');
       
-      // Add a contitional class to disting input from textarea (this is for styling purpose)
+      // Add a contitional class to distinct input from textarea (this is for styling purpose)
       $thislabel.addClass('for-'+$field.get(0).tagName.toLowerCase());
       
       // Check if a value is set
@@ -69,8 +69,9 @@
         $thislabel.addClass('value-set');
       }
       
-      // Add comportemental behaviors to the field
-      $field.focus(function() {
+      // Add behaviors to the field
+      $field
+      .focus(function() {
         $thislabel.addClass('focus');
         $thislabel.css('top',$field.outerHeight());
       })
