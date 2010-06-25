@@ -1,0 +1,31 @@
+=================================================
+jQuery Plugin: insideLabel
+       By David Jeanmonod
+=================================================
+
+Overview
+--------
+ This plugin allows to display the input's labels or textarea inside the fields.
+ To use it, activate it on the label:
+   $('#labelId').insideLabel()
+     
+ Then the label and the input will be encaplusated inside a relative span in order
+ to use abosolute positioning inside:
+   <span class="inside-label-container" style="position: relative">
+     <label ... >
+     <input ... >   
+   </span>
+    
+ For styling, here are the differents classes avaliable:
+   span.inside-label-container : The encaplusated span
+   input.with-label-inside     : Field that have the label inside
+   label.inside                : Label that are inside a field  
+   label.value-set             : Label of a field where the value isn't empty
+   label.focus                 : Label of a field that have the focus
+   label.inside.for-input      : Label that belong to an input (text or password)
+   label.inside.for-textarea   : Label that belong to a textarea
+
+
+License
+-------
+This plugin is licensed under both the GPL and MIT licenses. Choose which ever one suits your project best.
